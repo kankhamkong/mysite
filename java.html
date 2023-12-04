@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+</head>
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar w3-white w3-wide w3-padding w3-card">
+    <a href="index.html" class="w3-bar-item w3-button"><b>BR</b> Architects</a>
+    <!-- Float links to the right. Hide them on small screens -->
+    <div class="w3-right w3-hide-small">
+        <a href="java.html" class="w3-bar-item w3-button">Projects</a>
+        <a href="api.html" class="w3-bar-item w3-button">About</a>
+        <a href="#contact" class="w3-bar-item w3-button">Contact</a>
+    </div>
+  </div>
+</div>
+</head>
+<body>
+    <!-- Page content -->
+<div class="w3-content w3-padding-64 w3-margin-top" style="max-width:1564px">
+
+<h1>The Document Object</h1>
+<h2>The getElementById() Method</h2>
+<input id="numb">
+<button type="button" onclick="myFunction2()">Submit</button>
+<p id="demo1"></p>
+<button onclick="myFunction()">Click me</button>
+<p id="demo"></p>
+
+<div>
+<footer>
+<script>
+    
+function myFunction() {
+  document.getElementById("demo").innerHTML = "Hello World";
+}
+</script>
+
+<script>
+function myFunction2(){
+    let money = 'demo1';
+    let interest = 2.5;    
+    for(i = 1; i <= 20; i++){
+     money = money + (money*interest/100);
+     console.log("End of the year"+ i + "your money is"+money);
+    }
+
+     document.getElementById("demo1").innerHTML= money;
+ }
+</script>
+
+</footer>
+</div>
+
+
+    <!-- Project Section -->
+    <div class="w3-container w3-padding-32" id="projects">
+      <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">Projects</h3>
+    </div>
+  
+    <div class="w3-row-padding">
+      <div class="w3-col l3 m6 w3-margin-bottom">
+        <div class="w3-display-container">
+          <div class="w3-display-topleft w3-black w3-padding">Summer House</div>
+          <img src="img/house5.jpg" alt="House" style="width:100%">
+        </div>
+      </div>
+      <div class="w3-col l3 m6 w3-margin-bottom">
+        <div class="w3-display-container">
+          <div class="w3-display-topleft w3-black w3-padding">Brick House</div>
+          <img src="img/house2.jpg" alt="House" style="width:100%">
+        </div>
+      </div>
+      <div class="w3-col l3 m6 w3-margin-bottom">
+        <div class="w3-display-container">
+          <div class="w3-display-topleft w3-black w3-padding">Renovated</div>
+          <img src="img/house3.jpg" alt="House" style="width:100%">
+        </div>
+      </div>
+      <div class="w3-col l3 m6 w3-margin-bottom">
+        <div class="w3-display-container">
+          <div class="w3-display-topleft w3-black w3-padding">Barn House</div>
+          <img src="img/house4.jpg" alt="House" style="width:100%">
+        </div>
+      </div>
+    </div>
+  
+    <div class="w3-row-padding">
+      <div class="w3-col l3 m6 w3-margin-bottom">
+        <div class="w3-display-container">
+          <div class="w3-display-topleft w3-black w3-padding">Summer House</div>
+          <img src="img/house2.jpg" alt="House" style="width:99%">
+        </div>
+      </div>
+      <div class="w3-col l3 m6 w3-margin-bottom">
+        <div class="w3-display-container">
+          <div class="w3-display-topleft w3-black w3-padding">Brick House</div>
+          <img src="img/house5.jpg" alt="House" style="width:99%">
+        </div>
+      </div>
+      <div class="w3-col l3 m6 w3-margin-bottom">
+        <div class="w3-display-container">
+          <div class="w3-display-topleft w3-black w3-padding">Renovated</div>
+          <img src="img/house4.jpg" alt="House" style="width:99%">
+        </div>
+      </div>
+      <div class="w3-col l3 m6 w3-margin-bottom">
+        <div class="w3-display-container">
+          <div class="w3-display-topleft w3-black w3-padding">Barn House</div>
+          <img src="img/house3.jpg" alt="House" style="width:99%">
+        </div>
+      </div>
+    </div>
+</body>
+</html>
